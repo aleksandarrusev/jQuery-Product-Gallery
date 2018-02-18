@@ -6,31 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
+
     <title>Simple jQuery Product Gallery by Aleksandar Rusev</title>
 </head>
 
 <body>
     <div id="gallery">
         <div id="mainImg">
-            <a href="img/surface-book1.jpg">
+            <a data-fancybox="gallery" href="img/surface-book1.jpg">
                 <img src="img/surface-book1-small.jpg" alt="" id="mainImg">
             </a>
             <br>
         </div>
         <div id="thumbnails">
-            <a rel="pics" href="img/surface-book1.jpg">
+            <a data-fancybox="gallery" href="img/surface-book1.jpg">
                 <img src="img/surface-book1-small.jpg" class='thumbnail'>
             </a>
-            <a rel="pics" href="img/surface-book2.jpg">
+            <a data-fancybox="gallery" href="img/surface-book2.jpg">
                 <img src="img/surface-book2-small.jpg" class='thumbnail'>
             </a>
-            <a rel="pics" href="img/surface-book3.jpg">
+            <a data-fancybox="gallery" href="img/surface-book3.jpg">
                 <img src="img/surface-book3-small.jpg" class='thumbnail'>
             </a>
-            <a rel="pics" href="img/surface-book4.jpg">
+            <a data-fancybox="gallery" href="img/surface-book4.jpg">
                 <img src="img/surface-book4-small.jpg" class='thumbnail'>
             </a>
-            <a rel="pics" href="img/surface-book2.jpg">
+            <a data-fancybox="gallery" href="img/surface-book2.jpg">
                 <img src="img/surface-book2-small.jpg" class='thumbnail'>
             </a>
 
@@ -38,8 +43,7 @@
     </div>
 
 </body>
-<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
+
 <script src="js/main.js"></script>
 <script>
     $(document).ready(function () {
